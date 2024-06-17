@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.7eee306d.css",
-    "main.js": "/my-app/static/js/main.d4745803.js",
-    "static/js/453.4bd2d578.chunk.js": "/my-app/static/js/453.4bd2d578.chunk.js",
-    "index.html": "/my-app/index.html",
-    "main.7eee306d.css.map": "/my-app/static/css/main.7eee306d.css.map",
-    "main.d4745803.js.map": "/my-app/static/js/main.d4745803.js.map",
-    "453.4bd2d578.chunk.js.map": "/my-app/static/js/453.4bd2d578.chunk.js.map"
+    "main.css": "/flexhub/static/css/main.7eee306d.css",
+    "main.js": "/flexhub/static/js/main.056c5d48.js",
+    "static/js/453.4bd2d578.chunk.js": "/flexhub/static/js/453.4bd2d578.chunk.js",
+    "index.html": "/flexhub/index.html",
+    "main.7eee306d.css.map": "/flexhub/static/css/main.7eee306d.css.map",
+    "main.056c5d48.js.map": "/flexhub/static/js/main.056c5d48.js.map",
+    "453.4bd2d578.chunk.js.map": "/flexhub/static/js/453.4bd2d578.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7eee306d.css",
-    "static/js/main.d4745803.js"
+    "static/js/main.056c5d48.js"
   ]
 }
