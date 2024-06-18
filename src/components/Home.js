@@ -333,7 +333,6 @@ export default function Home(props) {
     }
     if (over > 2 * matchlimit) {
       showAlert("End of Match", "warning");
-      show2Alert("Select the type of match", "warning");
       setmatchended(true);
     }
 
@@ -392,6 +391,11 @@ export default function Home(props) {
           batsmanscore2["Hardik"]
       );
     }
+    // const sendalert = () => {
+    //   if (over > 2 * matchlimit) {
+    //     props.verybadalert2();
+    //   }
+    // };
 
     const determineWinner = () => {
       if (matchended) {
@@ -445,6 +449,23 @@ export default function Home(props) {
             batsmanscore2["Hardik"] > batsmanscore2["Rohit"]
           ) {
             motm = "Hardik";
+          } else if (
+            batsmanscore2["Hardik"] === batsmanscore2["Virat"] &&
+            batsmanscore2["Hardik"] > batsmanscore2["Rohit"]
+          ) {
+            motm =
+              ballfaced["Hardik"] > ballfaced["Virat?"] ? "Virat" : "Hardik";
+          } else if (
+            batsmanscore2["Hardik"] === batsmanscore2["Rohit"] &&
+            batsmanscore2["Hardik"] > batsmanscore2["Virat"]
+          ) {
+            motm =
+              ballfaced["Hardik"] > ballfaced["Rohit"] ? "Rohit" : "Hardik";
+          } else if (
+            batsmanscore2["Virat"] === batsmanscore2["Rohit"] &&
+            batsmanscore2["Hardik"] < batsmanscore2["Rohit"]
+          ) {
+            motm = ballfaced["Rohit"] > ballfaced["Virat"] ? "Virat" : "Rohit";
           } else {
             motm = "Some one From the Team";
           }
@@ -458,6 +479,7 @@ export default function Home(props) {
 
     determineWinner();
     determineManOfTheMatch();
+    // sendalert();
   }, [
     allbatsmanruns1,
     allbatsmanruns2,
@@ -473,6 +495,7 @@ export default function Home(props) {
     innings,
     overSecond,
     matchended,
+    ballfaced,
   ]);
 
   const renderPhoto = () => {

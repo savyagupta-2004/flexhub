@@ -59,13 +59,20 @@ function App() {
   const verybadalert = () => {
     toast(<b style={{ color: setcolor() }}>Select a Bowler</b>);
   };
+  const verybadalert2 = () => {
+    toast(<b style={{ color: setcolor() }}>Select a type of Match!</b>);
+  };
 
   return (
     <>
       <Navbar mode={mode} toggleMode={toggleMode} />
       <AlertsCricket alert={alert} />
       <AlertsCricket />
-      <Home mode={mode} verybadalert={verybadalert} />
+      <Home
+        mode={mode}
+        verybadalert={verybadalert}
+        verybadalert2={verybadalert2}
+      />
       <ToastContainer />
     </>
   );
